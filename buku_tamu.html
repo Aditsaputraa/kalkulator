@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adit Saputra</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Tautan ke Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigasi Menu Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Back to Home
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="artikel.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="buku_tamu.html">Buku Tamu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jadwal_kuliah.html">Jadwal Kuliah</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pendidikan.html">Riwayat Pendidikan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Untitled-1.html">Harga Barang</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="javascriptMenu" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Java Script
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="javascriptMenu">
+                            <a class="dropdown-item" href="Mnghitung.html">Menghitung Luas Persegi Panjang</a>
+                            <a class="dropdown-item" href="Memeriksaangka.html">Memeriksa Angka Positif Negatif Atau
+                                Nol</a>
+                            <a class="dropdown-item" href="kalkulator.html">Kalkulator</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h2 class="text-center">Form Buku Tamu</h2>
+        <form>
+            <div class="form-group">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama Lengkap">
+            </div>
+            <div class="form-group">
+                <label>Jenis Kelamin:</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="jenis_kelamin" id="laki-laki" value="L" checked>
+                    <label class="form-check-label" for="laki-laki">Laki-laki</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="jenis_kelamin" id="perempuan" value="P">
+                    <label class="form-check-label" for="perempuan">Perempuan</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat Tinggal:</label>
+                <input type="text" class="form-control" id="alamat" placeholder="Masukkan Alamat Tinggal">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Masukkan Email">
+            </div>
+            <div class="form-group">
+                <label>Aktif pada Sosial Media:</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="facebook" name="facebook" value="Ya" checked>
+                    <label class="form-check-label" for="facebook">Facebook</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="twitter" name="twitter" value="Ya" checked>
+                    <label class="form-check-label" for="twitter">Twitter</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="instagram" name="instagram" value="Ya" checked>
+                    <label class="form-check-label" for="instagram">Instagram</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="path" name="path" value="Ya" checked>
+                    <label class="form-check-label" for="path">Path</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="info">Mengetahui web ini dari:</label>
+                <select class="form-control" id="info">
+                    <option selected="selected">-= Pilih =-</option>
+                    <option value="web">Web</option>
+                    <option value="surat kabar">Surat Kabar</option>
+                    <option value="teman kerabat">Teman/Kerabat</option>
+                    <option value="browsing internet">Browsing Internet</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="pesan">Pesan:</label>
+                <textarea class="form-control" id="pesan" rows="4" placeholder="Masukkan Pesan Anda"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Kirim</button>
+        </form>
+    </div>
+    <!-- Tautan ke Bootstrap JavaScript dan jQuery (Diperlukan untuk komponen Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

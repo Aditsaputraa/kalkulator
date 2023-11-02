@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adit Saputra</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Tautan ke Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Back to Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="artikel.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="buku_tamu.html">Buku Tamu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jadwal_kuliah.html">Jadwal Kuliah</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pendidikan.html">Riwayat Pendidikan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Untitled-1.html">Harga Barang</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="javascriptMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Java Script
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="javascriptMenu">
+                            <a class="dropdown-item" href="Mnghitung.html">Menghitung Luas Persegi Panjang</a>
+                            <a class="dropdown-item" href="Memeriksaangka.html">Memeriksa Angka Positif Negatif Atau Nol</a>
+                            <a class="dropdown-item active" href="kalkulator.html">Kalkulator</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</head>
+<body>
+    <h1>Kalkulator Sederhana</h1>
+    <p>Masukkan angka pertama:</p>
+    <input type="text" id="angka1" placeholder="Angka pertama">
+    <p>Pilih operasi:</p>
+    <select id="operasi">
+        <option value="tambah">Penambahan (+)</option>
+        <option value="kurang">Pengurangan (-)</option>
+        <option value="kali">Perkalian (*)</option>
+        <option value="bagi">Pembagian (/)</option>
+    </select>
+    <p>Masukkan angka kedua:</p>
+    <input type="text" id="angka2" placeholder="Angka kedua">
+    <button onclick="hitung()">Hitung</button>
+    <p>Hasil: <span id="hasil"></span></p>
+    <br><br><br>
+    <footer class="text-center mt-5">
+        <p>&copy; 2023. Credit by <a href="https://www.instagram.com/whyuamal_/">Wahyu Amal Imran</a></p>
+    </footer Tautan ke Bootstrap JavaScript dan jQuery (Diperlukan untuk komponen Bootstrap) -->
+
+    <script>
+        function hitung() {
+            // Ambil nilai angka pertama, operasi, dan angka kedua dari input
+            var angka1 = parseFloat(document.getElementById("angka1").value);
+            var operasi = document.getElementById("operasi").value;
+            var angka2 = parseFloat(document.getElementById("angka2").value);
+
+            // Hitung berdasarkan operasi yang dipilih
+            var hasil;
+            if (operasi === "tambah") {
+                hasil = angka1 + angka2;
+            } else if (operasi === "kurang") {
+                hasil = angka1 - angka2;
+            } else if (operasi === "kali") {
+                hasil = angka1 * angka2;
+            } else if (operasi === "bagi") {
+                if (angka2 === 0) {
+                    alert("Pembagian dengan nol tidak diizinkan.");
+                    return;
+                }
+                hasil = angka1 / angka2;
+            }
+
+            // Tampilkan hasil
+            document.getElementById("hasil").textContent = hasil;
+        }
+    </script>
+       <!-- Tautan ke Bootstrap JavaScript dan jQuery (Diperlukan untuk komponen Bootstrap) -->
+       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+body {
+    animation: gradientBackground 5s ease infinite;
+    background: linear-gradient(45deg, #fdfefe, #fbfbfb);
+    background-size: 400% 400%;
+    margin: 0;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Warna teks dan padding untuk konten */
+.content {
+    color: #FFF8C9;
+    padding: 20px;
+}
+
+/* Styling for the Navbar */
+.navbar {
+    background-color: #007BFF; /* Warna latar belakang */
+    padding: 10px 0;
+    border-bottom: 2px solid #0056b3; /* Garis bawah navbar */
+}
+
+.navbar-brand {
+    color: #fff; /* Warna teks brand */
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar-toggler {
+    background-color: #fff; /* Warna background tombol toggler */
+}
+
+.nav-link {
+    color: #fff; /* Warna teks link */
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s; /* Efek transisi ketika hover */
+}
+
+.nav-link:hover {
+    color: #0056b3; /* Warna teks link saat hover */
+}
+
+.dropdown-menu {
+    background-color: #007BFF; /* Warna latar belakang dropdown */
+}
+
+.dropdown-item {
+    color: #fff; /* Warna teks dropdown item */
+    transition: background-color 0.3s; /* Efek transisi ketika hover */
+}
+
+.dropdown-item:hover {
+    background-color: #0056b3; /* Warna background dropdown item saat hover */
+}
+
+
+.carousel-caption {
+    background: rgba(250, 249, 249, 0.5);
+    color: #1f1f1e;
+}
+
+/* Ukuran maksimum gambar dalam Carousel */
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.body {
+    font-family: Arial, sans-serif;
+    /* Ganti dengan font yang Anda inginkan */
+}
+
+.custom-font {
+    font-family: "Courier New", monospace;
+    /* Font khusus untuk elemen dengan class "custom-font" */
+}
+
+.navbar {
+    border-bottom: 2px solid transparent;
+    /* Garis bawah awalnya transparan */
+}
+
+.navbar a:link,
+.navbar a:visited {
+    text-decoration: none;
+    /* Hilangkan dekorasi tautan */
+}
+
+.navbar a:active,
+.navbar a:hover {
+    border-bottom: 2px solid #FFCF96;
+    /* Warna dan lebar garis bawah saat aktif dan hover */
+}
+
+.navbar a:focus {
+    outline: #FFCF96
+        /* Hilangkan outline default saat fokus */
+}
+
+/* CSS untuk garis bawah pada navbar setelah diklik */
+.nav-link.active {
+    border-bottom: 2px solid #FFCF96;
+}
+
+.carousel {
+    max-width: 800px;
+    /* Lebar maksimum carousel */
+    margin: 0 auto;
+    /* Pusatkan carousel secara horizontal */
+}
+
+.carousel-inner img {
+    width: 600px;
+    /* Atur lebar yang Anda inginkan */
+    height: 600px;
+    /* Atur tinggi yang Anda inginkan */
+    object-fit: cover;
+    /* Atur pemadatan objek gambar jika perlu */
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.navbar {
+    background-color: rgb(34, 36, 66);
+
+}
+h3 {
+    color: #007BFF; /* Warna judul h3 */
+}
